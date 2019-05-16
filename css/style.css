@@ -3,19 +3,68 @@
   font-family: "Prompt", sans-serif;
 }
 
+/* Navigation*/
+.navbar {
+  background-color: transparent;
+}
+.scrolling-navbar {
+  transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+.top-nav-collapse {
+  background-color: #667490;
+}
+footer.page-footer {
+  background-color: #667490;
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #667490;
+  }
+}
+
+/* Necessary for full page carousel*/
+html,
+body,
+.view {
+  height: 100%;
+}
+/* Carousel*/
+.carousel,
+.carousel-item,
+.carousel-item.active {
+  height: 100%;
+}
+.carousel-inner {
+  height: 100%;
+}
+.carousel-item:nth-child(1) {
+  background-image: url("../img/promotion1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.carousel-item:nth-child(2) {
+  background-image: url("../img/promotion2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.nav-sexylucky {
+  flex-wrap: wrap;
+}
 .user-control {
   display: inline-block;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 .user-control .ul-user-control {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-right: 10px;
 }
 .user-control .ul-user-control li {
   display: inline;
-  margin-left: 30px;
+  margin-right: 10px;
 }
 .user-control .ul-user-control li a i,
 .user-control .ul-user-control li i,
@@ -55,7 +104,14 @@
 .navbar.navbar-dark.nav-sexylucky .navbar-nav .nav-item:last-of-type {
   margin-right: 0;
 }
-
+.main-index {
+  background-image: url("../img/bg2.jpg");
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
 .card-game {
   width: 100%;
   position: relative;
@@ -78,10 +134,82 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 20px;
 }
 .card-game:hover .hover-card-game {
   visibility: visible;
   opacity: 1;
+}
+.btn-hover-play {
+  background-color: transparent;
+  background-image: url("../img/btn_play.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #ffffff;
+  font-size: 1.5em;
+}
+
+.hoverable-sexylucky {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all 0.55s ease-in-out;
+  -o-transition: all 0.55s ease-in-out;
+  transition: all 0.55s ease-in-out;
+}
+.hoverable-sexylucky:hover {
+  -webkit-box-shadow: 0 8px 17px 0 rgba(238, 238, 238, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 17px 0 rgba(238, 238, 238, 0.2),
+    0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  -webkit-transition: all 0.55s ease-in-out;
+  -o-transition: all 0.55s ease-in-out;
+  transition: all 0.55s ease-in-out;
+}
+.btn-see-all-img {
+  width: 160px;
+}
+.btn-see-all-img:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 575px) {
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (max-width: 767px) {
+  .user-control .ul-user-control li i {
+    margin-right: 5px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-dark.nav-sexylucky .navbar-brand {
+    position: relative;
+  }
+  a.navbar-brand img.logo-custom {
+    position: absolute;
+    top: -50px;
+    width: 150px;
+    height: auto;
+  }
+}
+@media (max-width: 991px) {
+}
+@media (min-width: 992px) {
+  .navbar-dark.nav-sexylucky .navbar-brand {
+    position: relative;
+  }
+  a.navbar-brand img.logo-custom {
+    position: absolute;
+    top: -50px;
+    width: 150px;
+    height: auto;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+@media (max-width: 1199px) {
+}
+@media (min-width: 1200px) {
 }
