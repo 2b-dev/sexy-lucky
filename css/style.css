@@ -37,18 +37,19 @@ body,
 .carousel-inner {
   height: 100%;
 }
-.carousel-item:nth-child(1) {
-  background-image: url("../img/promotion1.jpg");
+.full-bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
-.carousel-item:nth-child(2) {
-  background-image: url("../img/promotion2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
+
 .nav-sexylucky {
   flex-wrap: wrap;
 }
@@ -105,11 +106,11 @@ body,
   margin-right: 0;
 }
 .main-index {
-  background-image: url("../img/bg2.jpg");
+  background-image: url("../img/bg3.jpg");
   background-color: #000000;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background-size: 100% 100%;
+  background-position: center top;
   background-attachment: fixed;
 }
 .card-game {
@@ -172,6 +173,25 @@ body,
 .btn-see-all-img:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
+.img-game-title{
+  height: 3.2rem;
+  margin-bottom: 1rem;
+}
+a img.btn-playgame{
+  width: 180px;
+}
+.logo_footer{
+  width: 100%;
+  max-width: 300px;
+}
+.footer-sexylucky{
+  background-color: #0c0c0c;
+  color: #ffffff;
+}
+.line-qr{
+  width: 100%;
+  max-width: 180px;
+}
 @media (max-width: 575px) {
 }
 
@@ -181,6 +201,10 @@ body,
 @media (max-width: 767px) {
   .user-control .ul-user-control li i {
     margin-right: 5px;
+  }
+  a.navbar-brand img.logo-custom{
+    width: 100%;
+    max-width: 120px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -192,6 +216,14 @@ body,
     top: -50px;
     width: 150px;
     height: auto;
+  }
+  .main-index {
+    background-image: url("../img/bg3.jpg");
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
   }
 }
 @media (max-width: 991px) {
