@@ -84,13 +84,13 @@
   <div id="carousel-promotion" class="carousel slide carousel-fade" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carousel-promotion" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-promotion" data-slide-to="1"></li>
-      <li data-target="#carousel-promotion" data-slide-to="2"></li>
+      <!--<li data-target="#carousel-promotion" data-slide-to="1"></li>
+      <li data-target="#carousel-promotion" data-slide-to="2"></li>-->
     </ol>
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
         <div class="view">
-          <div class="full-bg-img d-none d-lg-block" style="background-image: url('./img/promotion1.jpg');">
+          <!--<div class="full-bg-img d-none d-lg-block" style="background-image: url('./img/promotion1.jpg');">
 
           </div>
           <div class="full-bg-img d-none d-md-block d-lg-none"
@@ -100,10 +100,11 @@
           <div class="full-bg-img d-block d-md-none" style="background-image: url('./img/promotion1_mobile.jpg');">
 
           </div>
+        -->
         </div>
       </div>
 
-      <div class="carousel-item">
+      <!--<div class="carousel-item">
         <div class="view">
           <div class="full-bg-img d-none d-lg-block" style="background-image: url('./img/promotion2.jpg');">
 
@@ -116,8 +117,8 @@
 
           </div>
         </div>
-      </div>
-      <div class="carousel-item">
+      </div>-->
+      <!--<div class="carousel-item">
         <div class="view">
           <div class="full-bg-img d-none d-lg-block" style="background-image: url('./img/promotion3.jpg');">
 
@@ -130,7 +131,7 @@
 
           </div>
         </div>
-      </div>
+      </div>-->
     </div>
 
     <a class="carousel-control-prev" href="#carousel-promotion" role="button" data-slide="prev">
@@ -141,6 +142,14 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
+    <div class="bg-carousel-promotion">
+      <div class="contain-bg">
+        <div class="contain-bg-sub sub-0"></div>
+        <div class="contain-bg-sub sub-1 wow fadeInDown" data-wow-delay="0.3s"></div>
+        <div class="contain-bg-sub sub-2 wow fadeIn" data-wow-delay="0.8s"></div>
+        <div class="contain-bg-sub sub-4 wow fadeIn" data-wow-delay="0.8s"></div>
+      </div>
+    </div>
   </div>
 
   <main class="main-index">
@@ -294,6 +303,7 @@
   $('.carousel').carousel({
     interval: 3000
   })
+  new WOW().init();
 </script>
 
 </html>
