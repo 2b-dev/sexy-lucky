@@ -130,7 +130,18 @@ body,
   position: relative;
   min-height: 80vh;
 }
-.for-bg-withdraw{
+.main-horo {
+  background-image: url("../img/bg-horo.png");
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  padding-top: 6rem;
+  position: relative;
+  min-height: 80vh;
+}
+.for-bg-withdraw {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -142,12 +153,79 @@ body,
   position: absolute;
   top: 0;
 }
+.text-horo-phone{
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 1rem;
+}
+
+.input-phone{
+  background-image: url('../img/input-phone.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  max-width: 400px;
+  height: 60px;
+  margin: 0 auto;
+  color: #ffffff!important;
+  outline: none;
+  text-align: center;
+}
+.input-phone:focus, .input-phone:active{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+.text-pill-phone{
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-top: 0.5rem;
+}
+.btn-horo{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: 100%;
+  max-width: 190px;
+}
+.btn-daily{
+  width: 80px;
+  height: 80px;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin: 10px;
+}
+.btn-daily:active, .btn-daily:focus, .btn-daily:hover{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+.btn-horo-other{
+  width: 18%;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin: 10px;
+}
+.btn-horo-other:active, .btn-horo-other:focus, .btn-horo-other:hover{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+}
 .card-game {
   width: 100%;
   position: relative;
   border-radius: 20px;
 }
-.text-deposit{
+.text-deposit {
   position: absolute;
   top: -20px;
   left: 0;
@@ -157,10 +235,10 @@ body,
   margin: 0 auto;
   display: block;
 }
-.box-deposit{
+.box-deposit {
   z-index: 20;
 }
-.card-deposit{
+.card-deposit {
   position: absolute;
   bottom: 0;
   right: 80%;
@@ -414,31 +492,34 @@ a img.btn-playgame {
 .input-id-card {
   display: none;
 }
-.btn-id-card{
+.btn-id-card {
   width: 150px;
   background-color: transparent;
   border: none;
   outline: none;
   margin-top: 5px;
 }
-.btn-register{
+.btn-register {
   width: 180px;
   background-color: transparent;
   border: none;
   outline: none;
   margin-top: 15px;
 }
-.btn-withdraw{
+.btn-withdraw {
   width: 140px;
 }
-.btn-id-card:active, .btn-id-card:focus ,.btn-register:active, .btn-register:focus{
+.btn-id-card:active,
+.btn-id-card:focus,
+.btn-register:active,
+.btn-register:focus {
   border: none;
   outline: none;
 }
-.bg-withdrow-form{
+.bg-withdrow-form {
   background-image: url();
 }
-#text-file-upload{
+#text-file-upload {
   color: #ffffff;
   white-space: nowrap;
   overflow: hidden;
@@ -503,7 +584,7 @@ a img.btn-playgame {
     background-size: cover;
     background-position: center center;
   }
-  .text-deposit{
+  .text-deposit {
     width: 70%;
   }
 }
@@ -570,7 +651,7 @@ a img.btn-playgame {
   .text-cover-3 {
     width: 85%;
   }
-  .text-deposit{
+  .text-deposit {
     width: 60%;
   }
 }
@@ -580,6 +661,10 @@ a img.btn-playgame {
     background-size: cover;
     background-position: center center;
   }
+  .btn-horo-other{
+    width: 30%;
+  }
+
 }
 @media (min-width: 992px) {
   .navbar-dark.nav-sexylucky .navbar-brand {

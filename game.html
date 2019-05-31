@@ -90,50 +90,13 @@
     </div>
     <section class="py-5">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-7">
-            <div class="row justify-content-center">
-              <div class="col-12 mb-2">
-                <img src="./img/text-register.png" class="img-fluid">
-              </div>
-              <div class="col-12 col-md-8">
-                <input class="form-control form-register register-username" placeholder="ชื่อ - นามสกุล">
-              </div>
-              <div class="col-12 col-md-8">
-                <input class="form-control form-register register-phone" placeholder="เบอร์โทรศัพท์">
-              </div>
-              <div class="col-12 col-md-8">
-                <input class="form-control form-register register-bank" placeholder="กรุณาเลือกธนาคาร">
-              </div>
-              <div class="col-12 col-md-8">
-                <input class="form-control form-register register-account" placeholder="เลขที่บัญชี">
-              </div>
-              <div class="col-12 col-md-8">
-                <input class="form-control form-register register-date" placeholder="วัน/เดือน/ปีเกิด">
-              </div>
-              <div class="col-12 col-md-8">
-                <input class="form-control form-register register-pass" placeholder="รหัสถอน">
-              </div>
-              <div class="col-12 col-md-8">
-                <div class="row">
-                  <div class="col-4">
-                    <button class="btn-id-card">
-                      <img src="./img/btn-upload.png" class="img-fluid">
-                    </button>
-                    <input class="input-id-card" type="file">
-                  </div>
-                  <div class="col-8 d-flex align-items-center">
-                    <p id="text-file-upload" class="mb-0">ยังไม่เลือกไฟล์</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-8 text-center">
-                <button class="btn-register">
-                  <img src="./img/btn-register.png" class="img-fluid">
-                </button>
-              </div>
-            </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <img src="./img/game.png" class="img-game-title" alt="เกมฮิต" />
           </div>
+        </div>
+        <div id="loop-game" class="row justify-content-center">
+          
         </div>
       </div>
     </section>
@@ -199,6 +162,23 @@
     }
   })
 
+</script>
+<script>
+  var i;
+  for (i = 1; i < 75; i++) {
+    $('#loop-game').append(
+      `<div class="col-12 col-md-4 col-lg-3 mb-3">
+        <div class="card-game hoverable-sexylucky">
+          <img src="./img/for-loop/`+i+`.png" class="img-fluid w-100" alt="`+i+`" />
+          <div class="hover-card-game">
+            <a href="#" class="">
+              <img src="./img/playgame.png" class="btn-playgame" />
+            </a>
+          </div>
+        </div>
+      </div>`
+    )
+  }
 </script>
 
 </html>
