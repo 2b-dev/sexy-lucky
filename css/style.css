@@ -119,6 +119,20 @@ body,
   background-position: center top;
   background-attachment: fixed;
 }
+.main-register {
+  background-image: url("../img/bg3.jpg");
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center top;
+  background-attachment: fixed;
+  padding-top: 6rem;
+  position: relative;
+}
+.for-header {
+  position: absolute;
+  top: 0;
+}
 .card-game {
   width: 100%;
   position: relative;
@@ -175,9 +189,11 @@ body,
 }
 .btn-see-all-img {
   width: 160px;
+  transition: width 400ms ease-in-out;
 }
 .btn-see-all-img:hover {
   background-color: rgba(0, 0, 0, 0.5);
+  width: 165px;
 }
 .img-game-title {
   height: 3.5rem;
@@ -313,6 +329,85 @@ a img.btn-playgame {
     transform: rotate(360deg);
   }
 }
+.form-register {
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/bg-input.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 60px;
+  padding-left: 5.5rem;
+  color: #634e76 !important;
+  font-size: 1.3rem;
+}
+.form-register::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #634e76;
+  opacity: 1; /* Firefox */
+}
+
+.form-register:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #634e76;
+}
+
+.form-register::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #634e76;
+}
+.form-register:focus {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.register-username {
+  background-image: url("../img/bg-input-username.png");
+}
+.register-phone {
+  background-image: url("../img/bg-input-phone.png");
+}
+.register-bank {
+  background-image: url("../img/bg-input-bank.png");
+}
+.register-account {
+  background-image: url("../img/bg-input-account.png");
+}
+.register-date {
+  background-image: url("../img/bg-input-date.png");
+}
+.register-pass {
+  background-image: url("../img/bg-input-pass.png");
+}
+.input-id-card {
+  display: none;
+}
+.btn-id-card{
+  width: 150px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-top: 5px;
+}
+.btn-register{
+  width: 180px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-top: 15px;
+}
+.btn-id-card:active, .btn-id-card:focus ,.btn-register:active, .btn-register:focus{
+  border: none;
+  outline: none;
+}
+
+#text-file-upload{
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 @media (max-width: 575px) {
 }
 
@@ -367,6 +462,11 @@ a img.btn-playgame {
   .text-cover-3 {
     width: 100%;
   }
+  .main-index,
+  .main-register {
+    background-size: cover;
+    background-position: center center;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-dark.nav-sexylucky .navbar-brand {
@@ -386,6 +486,7 @@ a img.btn-playgame {
     background-position: center top;
     background-attachment: fixed;
   }
+
   .girl-left-cover-1 {
     width: 100%;
     max-width: 600px;
@@ -432,6 +533,11 @@ a img.btn-playgame {
   }
 }
 @media (max-width: 991px) {
+  .main-index,
+  .main-register {
+    background-size: cover;
+    background-position: center center;
+  }
 }
 @media (min-width: 992px) {
   .navbar-dark.nav-sexylucky .navbar-brand {
