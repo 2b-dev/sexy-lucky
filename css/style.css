@@ -509,6 +509,9 @@ a img.btn-playgame {
 .btn-withdraw {
   width: 140px;
 }
+.btn-activate{
+  width: 190px;
+}
 .btn-id-card:active,
 .btn-id-card:focus,
 .btn-register:active,
