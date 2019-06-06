@@ -535,8 +535,14 @@ a img.btn-playgame {
 }
 
 @media (max-width: 767px) {
-  .user-control .ul-user-control li i {
+  /*.user-control .ul-user-control li i {
     margin-right: 5px;
+  }*/
+  #basicExampleNav{
+    background-color: #634e76;
+  }
+  .user-control .ul-user-control li i{
+    display: none;
   }
   a.navbar-brand img.logo-custom {
     width: 100%;
