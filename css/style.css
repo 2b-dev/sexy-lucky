@@ -492,6 +492,10 @@ a img.btn-playgame {
 .input-id-card {
   display: none;
 }
+.banner-slide{
+  width: 80%;
+  max-width: 600px;
+}
 .btn-id-card {
   width: 150px;
   background-color: transparent;
