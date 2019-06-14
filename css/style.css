@@ -24,6 +24,10 @@ footer.page-footer {
   .navbar {
     background-color: #667490;
   }
+  .banner-slide{
+    width: 80%;
+    max-width: 720px;
+  }
 }
 
 /* Necessary for full page carousel*/
@@ -148,6 +152,9 @@ body,
   right: 0;
   margin: 0 auto;
   text-align: center;
+}
+.banner-slide{
+  width: 80%;
 }
 .for-header {
   position: absolute;
@@ -492,10 +499,7 @@ a img.btn-playgame {
 .input-id-card {
   display: none;
 }
-.banner-slide{
-  width: 80%;
-  max-width: 600px;
-}
+
 .btn-id-card {
   width: 150px;
   background-color: transparent;
@@ -599,6 +603,10 @@ a img.btn-playgame {
   }
   .text-deposit {
     width: 70%;
+  }
+  .banner-slide{
+    width: 90%;
+    max-width: 600px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -723,10 +731,16 @@ a img.btn-playgame {
   .text-cover-3 {
     width: 85%;
   }
+  .banner-slide{
+    max-width: 750px;
+  }
 }
 @media (max-width: 1199px) {
 }
 @media (min-width: 1200px) {
+  .banner-slide{
+    max-width: 750px;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
